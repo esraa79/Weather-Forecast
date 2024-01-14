@@ -199,7 +199,7 @@ async function getWeather(city)
     
 
     
-        const apiResponse = await fetch(`http://api.weatherapi.com/v1/forecast.json?key=7ae9fb3a443d411b96e164539240401 &q=${city}&days=${daysNum}&aqi=no&alerts=no`)
+        const apiResponse = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=7ae9fb3a443d411b96e164539240401 &q=${city}&days=${daysNum}&aqi=no&alerts=no`)
         console.log(apiResponse)
         if(apiResponse.ok)
         {
